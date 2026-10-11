@@ -9,7 +9,7 @@ _Dernière mise à jour : 2025_
 
 Wizard Scoreboard (« l'application ») est développée par Nodorum Solutio. Cette politique explique quelles données l'application utilise et pourquoi.
 
-Autres langues : [English](privacy-policy.html) | [Nederlands](privacy-policy.nl.html) | [Deutsch](privacy-policy.de.html) | [Español](privacy-policy.es.html) | [Dansk](privacy-policy.da.html)
+Autres langues : [English](privacy-policy.html) | [Nederlands](privacy-policy.nl.html) | [Deutsch](privacy-policy.de.html) | [Español](privacy-policy.es.html) | [Dansk](privacy-policy.da.html) | [Italiano](privacy-policy.it.html) | [Português](privacy-policy.pt.html) | [Čeština](privacy-policy.cs.html) | [Polski](privacy-policy.pl.html) | [Lietuvių](privacy-policy.lt.html) | [Ελληνικά](privacy-policy.el.html) | [Українська](privacy-policy.uk.html) | [Suomi](privacy-policy.fi.html) | [Norsk](privacy-policy.nb.html) | [Svenska](privacy-policy.sv.html) | [Bahasa Indonesia](privacy-policy.id.html) | [Bahasa Melayu](privacy-policy.ms.html) | [日本語](privacy-policy.ja.html) | [한국어](privacy-policy.ko.html) | [简体中文](privacy-policy.zh-Hans.html)
 
 ## Données stockées sur votre appareil
 
