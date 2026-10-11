@@ -23,11 +23,26 @@ Wizard Scoreboard is a .NET MAUI app for tracking points in the Wizard card game
 ## Supported Languages
 
 - English (default)
-- Dutch (Nederlands)
-- German (Deutsch)
+- Dutch (Nederlands), including Belgium (Vlaams)
+- German (Deutsch), including Austria and Switzerland
 - French (Français)
 - Spanish (Español)
 - Danish (Dansk)
+- Chinese, Simplified (简体中文)
+- Czech (Čeština)
+- Finnish (Suomi)
+- Greek (Ελληνικά)
+- Indonesian (Bahasa Indonesia)
+- Italian (Italiano)
+- Japanese (日本語)
+- Korean (한국어)
+- Lithuanian (Lietuvių)
+- Malay (Bahasa Melayu)
+- Norwegian (Norsk bokmål)
+- Polish (Polski)
+- Portuguese (Português)
+- Swedish (Svenska)
+- Ukrainian (Українська)
 
 ## Android Download
 

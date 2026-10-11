@@ -38,38 +38,45 @@
         <h2>v3.5.0 <span class="date">(2026-10-11)</span></h2>
         <p><a class="download" href="https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.5.0/wizard-scoreboard-android.apk">Download APK v3.5.0</a></p>
         <ul>
-            <li><details><summary>Add de-AT/de-CH localization support</summary><p>Added German regional support for Austria and Switzerland, updated localization fallback and supported culture lists, exposed both languages in Settings, adjusted tests for culture resolution/language ordering/resource completeness, updated beta welcome text for Swiss German, and bumped app version to 3.4.2 build 10393.</p></details></li>
-            <li><details><summary>Add JA/KO/ZH-Hans localization support</summary><p>Complete the localization rollout for Japanese, Korean, and Simplified Chinese by adding full resource files, rule pages, culture mapping, settings picker entries, and expanded completeness/fallback tests. Increment ApplicationVersion to 10392.</p></details></li>
-            <li><details><summary>Add FI/NB/SV localization and rules</summary><p>Add Finnish, Norwegian, and Swedish localization support across tests, supported cultures, settings language lists, and resource files; add quick/full rules HTML for these languages; update localization fallback coverage and settings language ordering tests; bump ApplicationVersion to 10391.</p></details></li>
-            <li><details><summary>Refine bug report diagnostics and localization</summary><p>Move device/app details into BugReportDiagnostics, add English technical labels and app-state context (settings, current game status, navigation trail and font scale), update the localized header, add tests, and bump ApplicationVersion.</p></details></li>
-            <li><details><summary>Add Ukrainian, Indonesian, and Malay locales</summary><p>Add localization support for Ukrainian, Indonesian, and Malay, including Malay rule files, updated culture fallback mappings, completeness tests, and bump ApplicationVersion to 10386.</p></details></li>
+            <li><details><summary>Add de-AT/de-CH localization support</summary><p>Added German regional support for Austria and Switzerland, updated localization fallback and supported culture lists, exposed both languages in Settings, adjusted tests for culture resolution/language ordering/resource completeness, updated beta welcome text for Swiss German.</p></details></li>
+            <li><details><summary>Add JA/KO/ZH-Hans localization support</summary><p>Complete the localization rollout for Japanese, Korean, and Simplified Chinese by adding full resource files, rule pages, culture mapping, settings picker entries, and expanded completeness/fallback tests.</p></details></li>
+            <li><details><summary>Add FI/NB/SV localization and rules</summary><p>Add Finnish, Norwegian, and Swedish localization support across tests, supported cultures, settings language lists, and resource files; add quick/full rules HTML for these languages; update localization fallback coverage and settings language ordering tests.</p></details></li>
+            <li><details><summary>Refine bug report diagnostics and localization</summary><p>Move device/app details into BugReportDiagnostics, add English technical labels and app-state context (settings, current game status, navigation trail and font scale), update the localized header, add tests.</p></details></li>
+            <li><details><summary>Add Ukrainian, Indonesian, and Malay locales</summary><p>Add localization support for Ukrainian, Indonesian, and Malay, including Malay rule files, updated culture fallback mappings, completeness tests.</p></details></li>
             <li><details><summary>Add Lithuanian and Greek localization</summary><p>Added Lithuanian quick/full rules HTML pages with localized game instructions, variants, scoring, and beta reminder updates. Replaced and expanded Lithuanian and Greek resource strings for UI text, bug reports, rules labels, and variant descriptions.</p></details></li>
-            <li><details><summary>Add localization support for new languages</summary><p>Add pl-PL and pt-PT support with culture fallbacks and settings entries, expand localization tests, add Czech/Polish/Portuguese rule pages, update roadmap status, refresh the Czech strings/resx beta guidance, and bump ApplicationVersion to 10384.</p></details></li>
+            <li><details><summary>Add localization support for new languages</summary><p>Add pl-PL and pt-PT support with culture fallbacks and settings entries, expand localization tests, add Czech/Polish/Portuguese rule pages, update roadmap status, refresh the Czech strings/resx beta guidance.</p></details></li>
         </ul>
     </section>
     <section id="v3.4.2">
         <h2>v3.4.2 <span class="date">(2026-10-11)</span></h2>
         <p><a class="download" href="https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.4.2/wizard-scoreboard-android.apk">Download APK v3.4.2</a></p>
         <ul>
-            <li><details><summary>Align round validation with card counts</summary><p>Use session card counts for round generation and validation; update tests to the new PlayerInputViewModel constructor and bump the application version.</p></details></li>
+            <li><details><summary>Align round validation with card counts</summary><p>Use session card counts for round generation and validation; update tests to the new PlayerInputViewModel constructor.</p></details></li>
+        </ul>
+    </section>
+    <section id="v3.4.1">
+        <h2>v3.4.1 <span class="date">(2026-10-11)</span></h2>
+        <p><a class="download" href="https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.4.1/wizard-scoreboard-android.apk">Download APK v3.4.1</a></p>
+        <ul>
+            <li><details><summary>Add round schedule service and tests</summary><p>Centralize cards-per-round logic in a new RoundSchedule service, add short-game coverage for 3–6 players with validation tests, mark the blind-bidding roadmap item as complete.</p></details></li>
         </ul>
     </section>
     <section id="v3.4.0">
         <h2>v3.4.0 <span class="date">(2026-10-11)</span></h2>
         <p><a class="download" href="https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.4.0/wizard-scoreboard-android.apk">Download APK v3.4.0</a></p>
         <ul>
-            <li><details><summary>Add advanced settings toggle to Settings page</summary><p>Introduce a persisted ShowAdvancedSettings preference and split Settings into basic and advanced sections. Move bid-total rule, bold-all-text, export, and import controls behind the new advanced switch, add localized labels, add tests, and bump the app version to 3.4.0 (10376).</p></details></li>
-            <li><details><summary>Support hidden group options in settings</summary><p>Add globally hidden group options with settings for bid-rule and dealer-picks-trump visibility, plus a default dealer-picks-trump value when hidden. Update player selection and game-start behavior to respect hidden options and preserve group values. Extend Groups and Settings UI, add localized strings, cover hidden-option and JSON behaviors with unit tests, bump ApplicationVersion to 10374, and mark roadmap item 17 complete.</p></details></li>
-            <li><details><summary>Refactor switch rows and settings sections</summary><p>Use UiFactory.CreateSwitchRow and CreateSectionHeader across pages, expand beta welcome opt-out caption support, add settings localization strings, and bump ApplicationVersion to 10373.</p></details></li>
-            <li><details><summary>Add localized beta settings strings</summary><p>Add localized beta settings strings, and bump the app version from 10370 to 10372.</p></details></li>
+            <li><details><summary>Add advanced settings toggle to Settings page</summary><p>Introduce a persisted ShowAdvancedSettings preference and split Settings into basic and advanced sections. Move bid-total rule, bold-all-text, export, and import controls behind the new advanced switch, add localized labels, add tests.</p></details></li>
+            <li><details><summary>Support hidden group options in settings</summary><p>Add globally hidden group options with settings for bid-rule and dealer-picks-trump visibility, plus a default dealer-picks-trump value when hidden. Update player selection and game-start behavior to respect hidden options and preserve group values. Extend Groups and Settings UI, add localized strings, cover hidden-option and JSON behaviors with unit tests, and mark roadmap item 17 complete.</p></details></li>
+            <li><details><summary>Refactor switch rows and settings sections</summary><p>Use UiFactory.CreateSwitchRow and CreateSectionHeader across pages, expand beta welcome opt-out caption support, add settings localization strings.</p></details></li>
+            <li><details><summary>Add localized beta settings strings</summary><p>Add localized beta settings strings.</p></details></li>
         </ul>
     </section>
     <section id="v3.3.2">
         <h2>v3.3.2 <span class="date">(2026-10-10)</span></h2>
         <p><a class="download" href="https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.3.2/wizard-scoreboard-android.apk">Download APK v3.3.2</a></p>
         <ul>
-            <li><details><summary>Use source-gen JSON and typed MAUI bindings</summary><p>Switched MAUI pages to strongly typed bindings, replaced reflection-based JsonSerializer usage with AppJsonContext source-generated metadata, added indented backup serialization support, covered JSON round-tripping and backup formatting with unit tests, enabled trimming-friendly Android Release publishing, disabled reflection-based JSON by default, and bumped ApplicationVersion to 10370.</p></details></li>
-            <li><details><summary>Add haptics and accessibility improvements</summary><p>Add user-controlled haptic feedback with persistence, vibration triggers, and Android permission handling. Improve icon button accessibility metadata, tighten color contrast, add WCAG contrast tests, update translations, and bump ApplicationVersion to 10369.</p></details></li>
+            <li><details><summary>Use source-gen JSON and typed MAUI bindings</summary><p>Switched MAUI pages to strongly typed bindings, replaced reflection-based JsonSerializer usage with AppJsonContext source-generated metadata, added indented backup serialization support, covered JSON round-tripping and backup formatting with unit tests, enabled trimming-friendly Android Release publishing, disabled reflection-based JSON by default.</p></details></li>
+            <li><details><summary>Add haptics and accessibility improvements</summary><p>Add user-controlled haptic feedback with persistence, vibration triggers, and Android permission handling. Improve icon button accessibility metadata, tighten color contrast, add WCAG contrast tests, update translations.</p></details></li>
         </ul>
     </section>
     <section id="v3.3.1">
@@ -77,16 +84,16 @@
         <p><a class="download" href="https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.3.1/wizard-scoreboard-android.apk">Download APK v3.3.1</a></p>
         <ul>
             <li><details><summary>Add game variants and hidden bids support</summary><p>Persist per-group variants and copy them into sessions, enforce special-card and Cloud bid rules, mask hidden bids in the scoreboard, and add localized strings plus tests. Add Special cards: Bomb/Dragon/Fairy and Cloud/Juggler</p></details></li>
-            <li><details><summary>Add player stats to highscore screen</summary><p>Add per-player statistics to the Highscore view, persist finished games for stats calculation, update DI and tests, add localized empty-state and dialog text, and bump the application version.</p></details></li>
+            <li><details><summary>Add player stats to highscore screen</summary><p>Add per-player statistics to the Highscore view, persist finished games for stats calculation, update DI and tests, add localized empty-state and dialog text.</p></details></li>
         </ul>
     </section>
     <section id="v3.2.2">
         <h2>v3.2.2 <span class="date">(2026-10-09)</span></h2>
         <p><a class="download" href="https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.2.2/wizard-scoreboard-android.apk">Download APK v3.2.2</a></p>
         <ul>
-            <li><details><summary>Expand test game generation scenarios</summary><p>Add scenario-driven test game generation, update saved-game round display, and cover new validation and generator tests; bump application version. Update chart for multiple winners</p></details></li>
-            <li><details><summary>Add charts</summary><p>Added score chart views from scoreboard and saved games, improved scoring and podium logic, dealer-bid validation, player chart colors, localized strings, expanded tests, and bumped application version.</p></details></li>
-            <li><details><summary>Add game summary flow and scoring</summary><p>Introduce a post-match game summary page with podium-style results, ranking, achievements, and image sharing. Add a calculator for final standings and bid-based records, improve trump selector layout and input touch handling, extend unit tests, update localized strings, and bump the application version.</p></details></li>
+            <li><details><summary>Expand test game generation scenarios</summary><p>Add scenario-driven test game generation, update saved-game round display, and cover new validation and generator tests. Update chart for multiple winners</p></details></li>
+            <li><details><summary>Add charts</summary><p>Added score chart views from scoreboard and saved games, improved scoring and podium logic, dealer-bid validation, player chart colors, localized strings, expanded tests.</p></details></li>
+            <li><details><summary>Add game summary flow and scoring</summary><p>Introduce a post-match game summary page with podium-style results, ranking, achievements, and image sharing. Add a calculator for final standings and bid-based records, improve trump selector layout and input touch handling, extend unit tests, update localized strings.</p></details></li>
             <li>feat: tablet and landscape layout (roadmap item 10)</li>
         </ul>
     </section>
@@ -94,7 +101,7 @@
         <h2>v3.2.0 <span class="date">(2026-10-09)</span></h2>
         <p><a class="download" href="https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.2.0/wizard-scoreboard-android.apk">Download APK v3.2.0</a></p>
         <ul>
-            <li><details><summary>Refactor pages into MVVM view models</summary><p>Move major page logic into dedicated MVVM view models, including score grid calculations, dialog validation, and bindable list item models. Update pages to bind to the new models, add tests for the view models and score grid logic, increment the app version, and apply the project/package fixes needed for build and dependency resolution.</p></details></li>
+            <li><details><summary>Refactor pages into MVVM view models</summary><p>Move major page logic into dedicated MVVM view models, including score grid calculations, dialog validation, and bindable list item models. Update pages to bind to the new models, add tests for the view models and score grid logic, and apply the project/package fixes needed for build and dependency resolution.</p></details></li>
         </ul>
     </section>
     <section id="v3.1.0">
@@ -108,23 +115,251 @@
         <h2>v3.0.0 <span class="date">(2026-10-06)</span></h2>
         <p><a class="download" href="https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.0.0/wizard-scoreboard-android.apk">Download APK v3.0.0</a></p>
         <ul>
-            <li><details><summary>Update AdMob config and privacy README</summary><p>Add privacy link, per-build AdMob IDs, and bump app version to 10331.</p></details></li>
+            <li><details><summary>Update AdMob config and privacy README</summary><p>Add privacy link, per-build AdMob IDs.</p></details></li>
             <li>Add monetization unit tests</li>
             <li>Add multilingual privacy policy and Settings link</li>
             <li>Fix AdMob init, add entry-dialog banners, monetization strings and tests</li>
-            <li><details><summary>Add ad and purchase flows to scoreboard app</summary><p>Integrate AdMob banners, interstitials, rewarded ads, and remove-ads purchase/restore flows across the main pages and scoreboard flow; add stop-game policies, save-game handling, AdMob initialization, and bump ApplicationVersion to 10327.</p></details></li>
-            <li><details><summary>Add monetization support and ad-free state</summary><p>Wire in AdMob and in-app purchase support for Android/iOS, add ad/purchase services and no-op fallbacks, persist remove_ads as IsAdFree with notifications, and bump app version/build metadata.</p></details></li>
+            <li><details><summary>Add ad and purchase flows to scoreboard app</summary><p>Integrate AdMob banners, interstitials, rewarded ads, and remove-ads purchase/restore flows across the main pages and scoreboard flow; add stop-game policies, save-game handling, AdMob initialization.</p></details></li>
+            <li><details><summary>Add monetization support and ad-free state</summary><p>Wire in AdMob and in-app purchase support for Android/iOS, add ad/purchase services and no-op fallbacks, persist remove_ads as IsAdFree with notifications.</p></details></li>
         </ul>
     </section>
     <section id="v2.5.5">
         <h2>v2.5.5 <span class="date">(2026-10-06)</span></h2>
-        <p><a class="download" href="https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v2.5.5/wizard-scoreboard-android.apk">Download APK v2.5.5</a></p>
+        <p class="no-download">No download available for this version.</p>
     </section>
     <section id="v2.5.4">
         <h2>v2.5.4 <span class="date">(2026-10-06)</span></h2>
-        <p><a class="download" href="https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v2.5.4/wizard-scoreboard-android.apk">Download APK v2.5.4</a></p>
+        <p class="no-download">No download available for this version.</p>
         <ul>
-            <li><details><summary>Fix Android release notes handling</summary><p>Update the Android release workflow to allow GitHub releases without <code>--verify-tag</code> and to pass an explicit empty release note when no notes file is available; bump <code>ApplicationVersion</code> to <code>10329</code>.</p></details></li>
+            <li><details><summary>Fix Android release notes handling</summary><p>Update the Android release workflow to allow GitHub releases without <code>--verify-tag</code> and to pass an explicit empty release note when no notes file is available.</p></details></li>
+        </ul>
+    </section>
+    <section id="v2.5.2">
+        <h2>v2.5.2 <span class="date">(2026-10-06)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li><details><summary>release Handle optional release repo updates</summary><p>Add optional RELEASE_REPO_PAT handling to android-release workflow so VERSION_OVERVIEW.md can be updated and pushed in a separate release repository. Generalize the version-overview helper to accept a file path and repository name, create the file when missing.</p></details></li>
+            <li><details><summary>Publish APKs and changelog to separate release repo</summary><p>Add a GitHub Actions step to create/update a release in hvkooten/wizard-scoreboard-release and upload APK artifacts and per-version changelog notes when RELEASE_REPO_PAT is provided. Authenticates gh with the provided token, prepares artifacts (artifacts/wizard-scoreboard-android-v${DISPLAY_VERSION}.apk and artifacts/wizard-scoreboard-android.apk), extracts the &quot;## v${DISPLAY_VERSION}&quot; section from ChangeLog.md/CHANGELOG.md into a temp file, and uses gh release upload/create/edit (with --clobber and --verify-tag) to attach files and notes. This runs in addition to existing release steps targeting the current repo.</p></details></li>
+            <li><details><summary>Clarify Scores/Points x10 setting</summary><p>Updated localized rules pages to explain that the “Scores/Points x10” option can be turned on or off, and that when it is off the tablet shows experience points divided by ten.</p></details></li>
+        </ul>
+    </section>
+    <section id="v2.5.1">
+        <h2>v2.5.1 <span class="date">(2026-10-05)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li><details><summary>Combine same-name highscores; warn on deletes</summary><p>Update help pages and delete-group warnings in EN/DE/ES/FR/NL/DA to explain that same-named players across groups share highscore totals, deleting a group removes its scores, and unique names are recommended.</p></details></li>
+            <li><details><summary>Preserve group selection on navigation</summary><p>Re-select the active group before leaving group dialogs so OnAppearing does not reset the selection.</p></details></li>
+            <li><details><summary>Add SelectGroup strings</summary><p>Added the new SelectGroup localized string across English, Danish, German, Spanish, French, and Dutch resources.</p></details></li>
+            <li><details><summary>Fix group edits and pending game startup</summary><p>Track unsaved group changes, preserve the bid-total rule caption and Windows picker behavior, keep generated group names stable after reordering, and add a Windows fallback for starting pending games after navigation; move startup logic in ScoreBoardPage.</p></details></li>
+            <li><details><summary>Improve picker taps and preserve page state</summary><p>Add a shared <code>OpensPickerOnTap</code> helper to make labels and preview rows open pickers more reliably across Groups, Settings, and other pages. Preserve the selected group when switching in <code>ScoreBoardPage</code>, keep users on Settings after changing language.</p></details></li>
+            <li><details><summary>Preserve selected group on new game start</summary><p>Keep the previously selected group when starting a new game from the groups page by skipping the session-group reset during <code>StartGameOnAppearing</code>.</p></details></li>
+        </ul>
+    </section>
+    <section id="v2.4.0">
+        <h2>v2.4.0 <span class="date">(2026-10-05)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li><details><summary>Add quick rules and score scaling support</summary><p>Add QuickRulesPage with localized rule summaries and reusable rule files, introduce ScoreTimesTen and formatted score display helpers, update score-related UI, expand tests.</p></details></li>
+            <li><details><summary>Add Danish localization support</summary><p>Add da-DK resources, rules content, localization coverage, language selection, and supported cultures.</p></details></li>
+        </ul>
+    </section>
+    <section id="v2.3.0">
+        <h2>v2.3.0 <span class="date">(2026-10-05)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li><details><summary>Rename trump setting and tighten no-trump rules</summary><p>Replace AllowNoTrump with DealerPicksTrump across models, UI, persistence, and tests; keep legacy JSON compatibility, update no-trump validation/trump selection behavior, revise localized rules text.</p></details></li>
+            <li><details><summary>Render suit symbols as text</summary><p>Update localized rules pages to render heart and diamond suits with the text-style selector.</p></details></li>
+            <li><details><summary>Reorder character-card bullets</summary><p>Reorder the Wizard rules character-card bullet lists so color-based entries precede suit-based entries in DE, EN, ES, FR, and NL, and normalize HTML list indentation/formatting.</p></details></li>
+            <li><details><summary>Refine Wizard rules translations</summary><p>Add separate color- and suit-based card order explanations with localized Wizard/Fool rankings in DE/EN/ES/FR/NL.</p></details></li>
+            <li><details><summary>Support palette-aware rules rendering</summary><p>Update RulesPage to use ITrumpPaletteService, cache the active palette mode, and reload only when language, theme, or palette changes. Split localized rules HTML into suit-colors and suit-cards variants, add palette-specific CSS injection, and add unit tests for ApplySuitStyle.</p></details></li>
+            <li><details><summary>Clarify rules pages</summary><p>Updated rule pages in German, English, Spanish, French, and Dutch to clarify tablet setup, player ordering, trump selection, bidding flow, the bid-not-total rule, last-round correction, and pause/end/highscore options.</p></details></li>
+            <li><details><summary>Force no-trump on final round</summary><p>Add forced no-trump handling for the last round when the dealer does not choose trump, validate it in ScoreService, hide other trump options in the UI, add a unit test.</p></details></li>
+            <li><details><summary>Unify Android signing</summary><p>Add conditional Android signing so Debug and Release can share the same keystore when credentials are set, avoiding signature mismatches and preserving app data. Update the discussion log with current status and verification guidance.</p></details></li>
+            <li><details><summary>Recover crash logs in startup bug reports</summary><p>Add crash-log recovery on next app start, centralize platform storage in <code>CrashLogStore</code>, update Android/iOS persistence, append crash details to bug reports, add localized prompt strings, cover <code>CrashLogStore</code> with tests.</p></details></li>
+            <li><details><summary>Fix iOS versioning and title layout</summary><p>Add iOS build number display, header label handling, title inset adjustments, crash diagnostics.</p></details></li>
+            <li><details><summary>Constrain HighscorePage scrolling layout</summary><p>Switch HighscorePage from StackLayout to Grid so the CollectionView height is constrained and can scroll properly.</p></details></li>
+            <li><details><summary>Make text actions responsive</summary><p>Switch ScoreBoardPage text actions to a responsive Grid layout and add ApplyTextActionLayout() to manage row/column placement and row collapse.</p></details></li>
+            <li><details><summary>Hide keyboard on player count change</summary><p>Hide the Android soft keyboard and clear focus before rebuilding GroupsPage entries, update player count resource strings to use “After…” wording, adjust keyboard spacer formatting.</p></details></li>
+            <li><details><summary>Localize group labels and update GroupsPage</summary><p>Add translations for the new bid-not-total round-rule label and group name label, update GroupsPage to show the group name and a platform-specific round-rule header, reduce the Android keyboard spacer height adjustment, include the Copilot instructions file in the solution.</p></details></li>
+            <li><details><summary>Improve Android keyboard scrolling</summary><p>Add a hidden keyboard spacer to GroupsPage so Android player name fields remain visible while typing.</p></details></li>
+            <li><details><summary>Localize highscore headers and improve layout</summary><p>Added localized highscore column headers and tests for <code>Localization.GetString()</code> across <code>en-US</code>, <code>nl-NL</code>, <code>de-DE</code>, <code>es-ES</code>, and <code>fr-FR</code>. Updated <code>HighscorePage</code> to use localized labels, added resource entries for all supported languages, set Android soft input mode to <code>Resize</code> to keep lower fields visible, increased button heights for better touch usability.</p></details></li>
+        </ul>
+    </section>
+    <section id="v2.2.0">
+        <h2>v2.2.0 <span class="date">(2026-10-01)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li><details><summary>Default Trump palette to FourColors</summary><p>Default TrumpPaletteService to FourColors when no stored preference exists or the stored value is invalid; update tests and bump app versions to 2.2.0 (ApplicationVersion 10275).</p></details></li>
+            <li><details><summary>Default no-trump start from Groups page</summary><p>Set <code>Group.AllowNoTrump</code> to true by default, update the localized Γ&#199;&#163;Dealer picks trumpΓ&#199;&#165; caption across supported languages, add localization tests, and update <code>GroupsPage</code>/<code>ScoreBoardPage</code> so a selected saved group can be started directly from Groups when no game is active. Bumped <code>ApplicationVersion</code> to <code>10272</code>.</p></details></li>
+            <li><details><summary>Load localized rules in WebView</summary><p>Replace the Rules page static text with a WebView that loads localized HTML from app assets, add rules pages for en/de/es/fr/nl with responsive styling and English fallback, remove obsolete resource entries, and bump ApplicationVersion to 10268.</p></details></li>
+            <li><details><summary>Support optional No Trump sessions</summary><p>Add group/session setting persistence, UI support, round validation, localized strings, and tests for No Trump; bump ApplicationVersion to 10267.</p></details></li>
+            <li><details><summary>Pin bidding and actuals actions in footer</summary><p>Move bidding and actuals dialog buttons into a dedicated footer below the scrollable form, add shared footer/layout helpers, refine bid total warning logic, preserve round watermark/backdrop behavior, and bump ApplicationVersion to 10266.</p></details></li>
+            <li><details><summary>Refresh scoreboard action button states</summary><p>Update ScoreBoardPage to apply paused/active action-button state before enabling controls, and bump the app build version to 10264.</p></details></li>
+            <li><details><summary>Rework scoreboard action bar rendering</summary><p>Rebuild the scoreboard action bar with a dynamic ContentView layout, centralize button creation, refresh toolbar controls when simplified-button mode changes, sync localized captions, add Android regression verification notes, and bump the application version.</p></details></li>
+            <li><details><summary>Add simplified buttons setting and tests</summary><p>Add Simplified buttons setting with persistence/localization, compact secondary actions in ScoreBoardPage, updated beta welcome wording, and tests; bump application version to 10261.</p></details></li>
+            <li><details><summary>Add beta welcome flow and persistent setting</summary><p>Add beta welcome page, settings toggle, localization, and tests; preserve beta welcome state across startup and theme rebuilds; increment application version.</p></details></li>
+            <li><details><summary>Add localized bug report actions</summary><p>Add localized bug-report support with versioned subjects, English technical details, and copy/open-email actions with clipboard fallback. Update resource strings for EN/NL/DE/ES/FR, expand localization tests, and bump ApplicationVersion to 10258.</p></details></li>
+            <li><details><summary>Add localized bug reporting flow</summary><p>Add localized bug reporting, mobile and WinUI entry points, localization tests, and bump the application version.</p></details></li>
+            <li><details><summary>Harden round validation and persistence</summary><p>Reject invalid/incomplete rounds, block new rounds until prior ones are finished, strip unfinished rounds from pause/resume/end/load paths, persist completed snapshots only, cancel abandoned round dialogs, expand validation/persistence tests, update localization, and bump app version to 10255.</p></details></li>
+            <li><details><summary>Refactor settings and expand persistence tests</summary><p>Centralize user settings behind a preference-backed wrapper, inject preferences into core services, update screen wake handling, and add broader regression coverage for persistence, localization, score calculation, and group management.</p></details></li>
+            <li><details><summary>Support last-round edits and restore history</summary><p>Added last-round correction support in ScoreService, RoundEntry snapshot restoration, scoreboard edit flow with visible bids and cancel/back support, page-appearance session restoration, localization updates, broader tests, and bumped ApplicationVersion to 10253.</p></details></li>
+            <li><details><summary>Reuse scoreboard cells on refresh</summary><p>Rework ScoreBoardPage to update existing grid cells in place instead of rebuilding the full UI each refresh. Add a scoreboardCells map and shared UpdateCell helper for consistent header, score, and footer updates. Rebuild grid structure only when needed, use fixed round row indices, and bump ApplicationVersion to 10250.</p></details></li>
+            <li><details><summary>Add iOS support and bump app version</summary><p>Add net10.0-ios support, iOS app bootstrap files, and Info.plist configuration; update Android app metadata; increment ApplicationVersion to 10249 and set app version to 2.1.0.</p></details></li>
+        </ul>
+    </section>
+    <section id="v2.1.0">
+        <h2>v2.1.0 <span class="date">(2026-10-01)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li><details><summary>Tighten AppShell flyout on phones</summary><p>Reduce AppShell flyout width on phones, remove the extra Android toolbar inset after the hamburger icon, and bump ApplicationVersion to 10247.</p></details></li>
+            <li><details><summary>Refine Android page title layout</summary><p>Adjusted the Android page title spacing to sit closer to the hamburger icon without clipping, reduced the title grid width offset from 88 to 68, and incremented ApplicationVersion to 10246.</p></details></li>
+            <li><details><summary>Update splash screen and bump version</summary><p>Bump ApplicationVersion to 10245 and set the MAUI splash screen background color to #10161d while preserving the existing image and base size.</p></details></li>
+            <li><details><summary>Refine group switching and duplicate checks</summary><p>Use a combined group name row with an action-sheet-driven group selector, validate against duplicate group names before saving, add localized duplicate-name strings, and bump the application version to 10244.</p></details></li>
+            <li><details><summary>Persist language and first-run defaults</summary><p>Save the selected app language in AppSettings, restore it on startup, apply first-launch bold text defaults, switch the localization fallback to en-US, and bump ApplicationVersion.</p></details></li>
+            <li><details><summary>Add branded splash and first-launch settings</summary><p>Introduce a custom startup splash with version, copyright, and localized disclaimer; route first launches to Settings; add shell page selection support; localize new strings; improve language labels; update app version and include splash asset.</p></details></li>
+            <li><details><summary>Restore scoreboard UI after round popup</summary><p>Disable game buttons before showing the round popup, refresh the UI in a finally block to ensure recovery after failures or interruptions, shorten the comment, and bump ApplicationVersion to 10234.</p></details></li>
+            <li><details><summary>Disable game buttons during start/pause</summary><p>Wrap game start and pause toggling in a shared helper that disables all action buttons, including Next Round, and yields so the disabled state is visible before slower work continues. Refresh the UI from the outer start wrapper even on early exit or exceptions, remove the duplicate refresh from <code>StartGameCoreAsync</code>, and bump <code>ApplicationVersion</code> to <code>10233</code>.</p></details></li>
+            <li><details><summary>Stabilize pause toggle UI</summary><p>Disabled Start/Pause/End briefly during TogglePauseAsync() to prevent repeated clicks while the scoreboard rebuilds, restored UI state on exceptions with RefreshUI(), and bumped ApplicationVersion to 10231.</p></details></li>
+            <li><details><summary>Refine trump visuals and watermark</summary><p>Update CardSuits watermark to show round plus trump symbol, refine trump color palettes and selection styling, and bump application version to 10230.</p></details></li>
+            <li><details><summary>Add default bid-total round label translations</summary><p>Add DefaultBidTotalRuleStartRound translations across EN/DE/ES/FR/NL and bump ApplicationVersion to 10229.</p></details></li>
+            <li><details><summary>Split group actions and improve navigation</summary><p>Add edit-group flow from player selection, route create/edit actions to GroupsPage, auto-select new group when creating, refactor player selection results, add localized group labels, and bump application version.</p></details></li>
+            <li><details><summary>Add localized Groups label</summary><p>Add localized &quot;Groups&quot; string for English, German, Spanish, French, and Dutch resources, and bump ApplicationVersion to 10226.</p></details></li>
+            <li><details><summary>Reuse modal for bidding/actuals flow</summary><p>Rework <code>DisplayRoundPopupAsync</code> to reuse the same modal when switching from bidding to actuals, add bid validation text colors, keep the popup open across the flow, improve cancel/error modal closing, add a guarded Back control for actuals, and bump <code>ApplicationVersion</code> to 10225.</p></details></li>
+            <li><details><summary>Generalize bid rules and restore sessions</summary><p>Dynamic round-limit helpers now drive bid-total rules across Settings, Groups, and Scoreboard; button styling and dark-mode dialog visuals were refined; actuals refresh and player name rendering were improved; active saved sessions now resume paused and all active sessions persist; app version updated to 10220.</p></details></li>
+            <li><details><summary>Add theme persistence and dark mode support</summary><p>Persist app theme, add a settings picker, rebuild AppShell on theme changes, centralize theme-aware colors, update UI to use shared dark-mode resources, fix header bolding, add localized strings, and bump the application version.</p></details></li>
+            <li><details><summary>Move HeaderLabel bolding to Android handler</summary><p>Extract Android bold enforcement for HeaderLabel into a dedicated handler, register it conditionally on Android, update related comments, and bump ApplicationVersion to 10206.</p></details></li>
+            <li><details><summary>Refine AboutPage version display</summary><p>Show Android version text with build number and use version-only text on other platforms via a local variable for cleaner platform-specific assignment.</p></details></li>
+            <li><details><summary>Restore bold Shell headers on Android</summary><p>Reapply bold styling for HeaderLabel on Android during font/text updates, keep Shell headers bold again, show app version and build on About page, and bump ApplicationVersion to 10204.</p></details></li>
+        </ul>
+    </section>
+    <section id="v2.0.1">
+        <h2>v2.0.1 <span class="date">(2026-06-17)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li>Fix: Update release-delete workflow to trigger on deleted releases</li>
+            <li>Add tag verification for manual workflow_dispatch</li>
+            <li>Fix: Increase Java heap size and adjust build settings for Android release</li>
+            <li>Use release unpublished event instead of workflow_dispatch</li>
+            <li>Fix: Change release-delete workflow to use workflow_dispatch trigger</li>
+            <li>Add workflow to remove release entry from VERSION_OVERVIEW.md on release deletion</li>
+        </ul>
+    </section>
+    <section id="v2.0.0">
+        <h2>v2.0.0 <span class="date">(2026-06-17)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li>fix: update release tag description and default value in Android release workflow</li>
+            <li>ux: add release keystore preparation and update project settings for Android signing</li>
+            <li>ux: update default release tag to v1.2.3 in Android release workflow</li>
+        </ul>
+    </section>
+    <section id="v1.2.3">
+        <h2>v1.2.3 <span class="date">(2026-06-17)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li>ux: update fetch depth and add build optimizations in Android release workflow</li>
+        </ul>
+    </section>
+    <section id="v1.2.2">
+        <h2>v1.2.2 <span class="date">(2026-06-17)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li>ux: add splash screen delay and update version display in SVG</li>
+        </ul>
+    </section>
+    <section id="v1.2.1">
+        <h2>v1.2.1 <span class="date">(2026-06-17)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li>ux: enhance PageTitleHelper and SettingsPage with improved layout and entry focus handling</li>
+        </ul>
+    </section>
+    <section id="v1.2.0">
+        <h2>v1.2.0 <span class="date">(2026-06-17)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li>ux: add workflows for welcoming first-time issue authors and labeling new issues</li>
+        </ul>
+    </section>
+    <section id="v1.1.1">
+        <h2>v1.1.1 <span class="date">(2026-06-17)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li>ux: enhance release workflow to update version overview and add release entries</li>
+            <li>ux: add delete functionality for saved games with confirmation dialog</li>
+            <li>ux: refactor page titles to use PageTitleHelper and update UI components</li>
+            <li>ux: move Wizard into page title, same font and line</li>
+            <li>ux: navigate to highscores after winner popup</li>
+        </ul>
+    </section>
+    <section id="v1.1.0">
+        <h2>v1.1.0 <span class="date">(2026-06-16)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li>ux: add Wizard subtitle to all page content areas</li>
+            <li>ux: auto-refresh highscores on page appear, remove manual refresh button</li>
+            <li>fix: reset per-game points when starting session</li>
+            <li>feat: order highscores by wins, best, played</li>
+            <li>i18n: add missing bids/none localization keys</li>
+            <li>test: expand score service coverage for saved sessions</li>
+            <li>i18n: add round popup title to all languages</li>
+            <li>feat: track games played and merge highscores by name</li>
+            <li>ux: disable round OK until trump is selected</li>
+            <li>ux: make saved games list collapsible accordion</li>
+            <li>fix: use relative route when opening saved game</li>
+            <li>feat: allow starting new game while current is paused</li>
+            <li>fix: calculate saved game scores from rounds</li>
+            <li>ux: prioritize next round before pause action</li>
+            <li>ux: show only active scoreboard actions</li>
+            <li>fix: guard auto-scroll against null session</li>
+            <li>feat: add saved games overview page</li>
+            <li>feat: persist paused game and restore on startup</li>
+            <li>feat: add pause/resume gameplay control</li>
+            <li>feat: award winners and refresh highscores on early game end</li>
+            <li>ux: use friendly prompt when trump is not selected</li>
+            <li>feat: add cancel button to player selection dialog</li>
+            <li>feat: auto-load last used group on app startup</li>
+            <li>feat: display group players when no game is active</li>
+            <li>style: reorder menu tabs to scoreboard, highscores, rules, settings</li>
+            <li>style: remove star symbol from dealer labels</li>
+            <li>feat: add short round header labels</li>
+            <li>style: shorten bid total rule label</li>
+            <li>fix: align bid total rule text across translations</li>
+            <li>style: sort resource strings by key</li>
+            <li>ci: skip maui install on cache hit and restore workloads</li>
+            <li>ci: update version overview for newer manual release tags</li>
+            <li>ci: update dispatch default only when manual tag is newer</li>
+            <li>ci: track latest release tag as workflow_dispatch default</li>
+            <li>ci: stabilize cache keys to reduce unnecessary cache churn</li>
+            <li>ci: support manual android release reruns and overwrite existing release</li>
+            <li>chore: Upgrade actions/checkout and actions/setup-dotnet to v5, enhance caching for NuGet and MAUI workload</li>
+            <li>ci: trigger workflow validation</li>
+            <li>feat: Update CI workflow to restore and save NuGet and MAUI workload cache</li>
+            <li>chore: Upgrade actions/checkout and actions/setup-dotnet to v5, update restore commands for consistency</li>
+            <li>fix: Update README links to use the correct repository owner</li>
+            <li>feat: Add caching for NuGet and MAUI workload in CI and Android release workflows</li>
+            <li>feat: Update CI workflow to improve MAUI workload installation and restore commands</li>
+        </ul>
+    </section>
+    <section id="v1.0.0">
+        <h2>v1.0.0 <span class="date">(2026-06-15)</span></h2>
+        <p class="no-download">No download available for this version.</p>
+        <ul>
+            <li>feat: Update README with app details, add Android release workflow, and create version overview</li>
+            <li>feat: Add CI workflow configuration and update README with project description</li>
+            <li>test: Refactor ScoreServiceTests to remove GroupService dependency and add new test cases for bid total rule logic</li>
+            <li>feat: Enhance SettingsPage with trump palette preview and align bid total rule with player count</li>
+            <li>feat: Implement bid total rule start round setting and update related logic across multiple components</li>
+            <li>feat: Update game end logic with confirmation dialog and enhance celebration display for winners</li>
+            <li>feat: Enhance ScoreBoardPage layout with header and footer grids, and improve scrolling behavior</li>
+            <li>feat: Add bid total rule start round setting and update logic in ScoreService</li>
+            <li><details><summary>feat: Implement player selection and bid total rule start round feature</summary><p>- Added functionality to save and restore window size preferences in App.cs. - Introduced player selection logic in ScoreBoardPage.cs, allowing users to select players for a game. - Updated ScoreSession model to include BidTotalRuleStartRound property to manage the starting round for the bid total rule. - Enhanced SettingsPage.cs to allow configuration of the starting round for the bid total rule. - Modified IScoreService and ScoreService to support starting a game with a selected list of players. - Added localization strings for new features in multiple languages.</p></details></li>
+            <li><details><summary>Add localization support for French and Dutch languages, enhance group management, and implement trump palette service</summary><p>- Updated resource files for French (Strings.fr.resx) and Dutch (Strings.nl.resx) with new game-related strings. - Enhanced GroupService to manage selected groups and persist group data using Preferences. - Added ITrumpPaletteService and TrumpPaletteService to manage trump palette modes and labels. - Adjusted scoring logic in ScoreService to reflect correct scoring rules. - Updated project file for .NET MAUI compatibility and added necessary Android and Windows platform files. - Introduced app icons and splash screen resources for better branding. - Added .gitignore to exclude build artifacts and user-specific files.</p></details></li>
+            <li>implement</li>
+            <li>tasks</li>
+            <li>plan</li>
+            <li>Constitution</li>
+            <li>Initial commit from Specify template</li>
         </ul>
     </section>
 </body>

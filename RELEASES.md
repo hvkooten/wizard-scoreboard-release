@@ -22,6 +22,11 @@ All published versions of Wizard Scoreboard with their changes. Older versions c
 
 - **Align round validation with card counts**: Use session card counts for round generation and validation; update tests to the new PlayerInputViewModel constructor and bump the application version.
 
+## v3.4.1 (2026-10-11)
+
+[Download APK v3.4.1](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.4.1/wizard-scoreboard-android.apk)
+- **Add round schedule service and tests**: Centralize cards-per-round logic in a new RoundSchedule service, add short-game coverage for 3–6 players with validation tests, mark the blind-bidding roadmap item as complete, and bump ApplicationVersion to 10378.
+
 ## v3.4.0 (2026-10-11)
 
 [Download APK v3.4.0](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.4.0/wizard-scoreboard-android.apk)
