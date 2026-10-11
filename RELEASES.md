@@ -4,66 +4,76 @@
 
 All published versions of Wizard Scoreboard with their changes. Older versions can be downloaded below.
 
+## v3.5.1 (2026-10-11)
+
+[Download APK v3.5.1](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.5.1/wizard-scoreboard-android.apk)
+
+- **Add round bid total label**: Add localized bold round bid total label to ScoreBoardPage.
+- **Add localized privacy policy pages**: Add privacy policy translations and language-specific pages for multiple locales, update localized PrivacyPolicyUrl mappings and localization tests.
+- **Add dealer hint for short-game deals**: Add localized DealCardsHint text.
+- **Expand languages and update translations**: Expanded supported languages and flag display on the website, added Simplified Chinese rules pages, localized and refined rule text plus multiple.resx translations, expanded the roadmap.
+
 ## v3.5.0 (2026-10-11)
 
 [Download APK v3.5.0](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.5.0/wizard-scoreboard-android.apk)
 
-- **Add de-AT/de-CH localization support**: Added German regional support for Austria and Switzerland, updated localization fallback and supported culture lists, exposed both languages in Settings, adjusted tests for culture resolution/language ordering/resource completeness, updated beta welcome text for Swiss German, and bumped app version to 3.4.2 build 10393.
-- **Add JA/KO/ZH-Hans localization support**: Complete the localization rollout for Japanese, Korean, and Simplified Chinese by adding full resource files, rule pages, culture mapping, settings picker entries, and expanded completeness/fallback tests. Increment ApplicationVersion to 10392.
-- **Add FI/NB/SV localization and rules**: Add Finnish, Norwegian, and Swedish localization support across tests, supported cultures, settings language lists, and resource files; add quick/full rules HTML for these languages; update localization fallback coverage and settings language ordering tests; bump ApplicationVersion to 10391.
-- **Refine bug report diagnostics and localization**: Move device/app details into BugReportDiagnostics, add English technical labels and app-state context (settings, current game status, navigation trail and font scale), update the localized header, add tests, and bump ApplicationVersion.
-- **Add Ukrainian, Indonesian, and Malay locales**: Add localization support for Ukrainian, Indonesian, and Malay, including Malay rule files, updated culture fallback mappings, completeness tests, and bump ApplicationVersion to 10386.
+- **Add de-AT/de-CH localization support**: Added German regional support for Austria and Switzerland, updated localization fallback and supported culture lists, exposed both languages in Settings, adjusted tests for culture resolution/language ordering/resource completeness, updated beta welcome text for Swiss German.
+- **Add JA/KO/ZH-Hans localization support**: Complete the localization rollout for Japanese, Korean, and Simplified Chinese by adding full resource files, rule pages, culture mapping, settings picker entries, and expanded completeness/fallback tests.
+- **Add FI/NB/SV localization and rules**: Add Finnish, Norwegian, and Swedish localization support across tests, supported cultures, settings language lists, and resource files; add quick/full rules HTML for these languages; update localization fallback coverage and settings language ordering tests.
+- **Refine bug report diagnostics and localization**: Move device/app details into BugReportDiagnostics, add English technical labels and app-state context (settings, current game status, navigation trail and font scale), update the localized header, add tests.
+- **Add Ukrainian, Indonesian, and Malay locales**: Add localization support for Ukrainian, Indonesian, and Malay, including Malay rule files, updated culture fallback mappings, completeness tests.
 - **Add Lithuanian and Greek localization**: Added Lithuanian quick/full rules HTML pages with localized game instructions, variants, scoring, and beta reminder updates. Replaced and expanded Lithuanian and Greek resource strings for UI text, bug reports, rules labels, and variant descriptions.
-- **Add localization support for new languages**: Add pl-PL and pt-PT support with culture fallbacks and settings entries, expand localization tests, add Czech/Polish/Portuguese rule pages, update roadmap status, refresh the Czech strings/resx beta guidance, and bump ApplicationVersion to 10384.
+- **Add localization support for new languages**: Add pl-PL and pt-PT support with culture fallbacks and settings entries, expand localization tests, add Czech/Polish/Portuguese rule pages, update roadmap status, refresh the Czech strings/resx beta guidance.
 
 ## v3.4.2 (2026-10-11)
 
 [Download APK v3.4.2](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.4.2/wizard-scoreboard-android.apk)
 
-- **Align round validation with card counts**: Use session card counts for round generation and validation; update tests to the new PlayerInputViewModel constructor and bump the application version.
+- **Align round validation with card counts**: Use session card counts for round generation and validation; update tests to the new PlayerInputViewModel constructor.
 
 ## v3.4.1 (2026-10-11)
 
 [Download APK v3.4.1](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.4.1/wizard-scoreboard-android.apk)
-- **Add round schedule service and tests**: Centralize cards-per-round logic in a new RoundSchedule service, add short-game coverage for 3–6 players with validation tests, mark the blind-bidding roadmap item as complete, and bump ApplicationVersion to 10378.
+
+- **Add round schedule service and tests**: Centralize cards-per-round logic in a new RoundSchedule service, add short-game coverage for 3–6 players with validation tests, mark the blind-bidding roadmap item as complete.
 
 ## v3.4.0 (2026-10-11)
 
 [Download APK v3.4.0](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.4.0/wizard-scoreboard-android.apk)
 
-- **Add advanced settings toggle to Settings page**: Introduce a persisted ShowAdvancedSettings preference and split Settings into basic and advanced sections. Move bid-total rule, bold-all-text, export, and import controls behind the new advanced switch, add localized labels, add tests, and bump the app version to 3.4.0 (10376).
-- **Support hidden group options in settings**: Add globally hidden group options with settings for bid-rule and dealer-picks-trump visibility, plus a default dealer-picks-trump value when hidden. Update player selection and game-start behavior to respect hidden options and preserve group values. Extend Groups and Settings UI, add localized strings, cover hidden-option and JSON behaviors with unit tests, bump ApplicationVersion to 10374, and mark roadmap item 17 complete.
-- **Refactor switch rows and settings sections**: Use UiFactory.CreateSwitchRow and CreateSectionHeader across pages, expand beta welcome opt-out caption support, add settings localization strings, and bump ApplicationVersion to 10373.
-- **Add localized beta settings strings**: Add localized beta settings strings, and bump the app version from 10370 to 10372.
+- **Add advanced settings toggle to Settings page**: Introduce a persisted ShowAdvancedSettings preference and split Settings into basic and advanced sections. Move bid-total rule, bold-all-text, export, and import controls behind the new advanced switch, add localized labels, add tests.
+- **Support hidden group options in settings**: Add globally hidden group options with settings for bid-rule and dealer-picks-trump visibility, plus a default dealer-picks-trump value when hidden. Update player selection and game-start behavior to respect hidden options and preserve group values. Extend Groups and Settings UI, add localized strings, cover hidden-option and JSON behaviors with unit tests, and mark roadmap item 17 complete.
+- **Refactor switch rows and settings sections**: Use UiFactory.CreateSwitchRow and CreateSectionHeader across pages, expand beta welcome opt-out caption support, add settings localization strings.
+- **Add localized beta settings strings**: Add localized beta settings strings.
 
 ## v3.3.2 (2026-10-10)
 
 [Download APK v3.3.2](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.3.2/wizard-scoreboard-android.apk)
 
-- **Use source-gen JSON and typed MAUI bindings**: Switched MAUI pages to strongly typed bindings, replaced reflection-based JsonSerializer usage with AppJsonContext source-generated metadata, added indented backup serialization support, covered JSON round-tripping and backup formatting with unit tests, enabled trimming-friendly Android Release publishing, disabled reflection-based JSON by default, and bumped ApplicationVersion to 10370.
-- **Add haptics and accessibility improvements**: Add user-controlled haptic feedback with persistence, vibration triggers, and Android permission handling. Improve icon button accessibility metadata, tighten color contrast, add WCAG contrast tests, update translations, and bump ApplicationVersion to 10369.
+- **Use source-gen JSON and typed MAUI bindings**: Switched MAUI pages to strongly typed bindings, replaced reflection-based JsonSerializer usage with AppJsonContext source-generated metadata, added indented backup serialization support, covered JSON round-tripping and backup formatting with unit tests, enabled trimming-friendly Android Release publishing, disabled reflection-based JSON by default.
+- **Add haptics and accessibility improvements**: Add user-controlled haptic feedback with persistence, vibration triggers, and Android permission handling. Improve icon button accessibility metadata, tighten color contrast, add WCAG contrast tests, update translations.
 
 ## v3.3.1 (2026-10-09)
 
 [Download APK v3.3.1](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.3.1/wizard-scoreboard-android.apk)
 
 - **Add game variants and hidden bids support**: Persist per-group variants and copy them into sessions, enforce special-card and Cloud bid rules, mask hidden bids in the scoreboard, and add localized strings plus tests. Add Special cards: Bomb/Dragon/Fairy and Cloud/Juggler
-- **Add player stats to highscore screen**: Add per-player statistics to the Highscore view, persist finished games for stats calculation, update DI and tests, add localized empty-state and dialog text, and bump the application version.
+- **Add player stats to highscore screen**: Add per-player statistics to the Highscore view, persist finished games for stats calculation, update DI and tests, add localized empty-state and dialog text.
 
 ## v3.2.2 (2026-10-09)
 
 [Download APK v3.2.2](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.2.2/wizard-scoreboard-android.apk)
 
-- **Expand test game generation scenarios**: Add scenario-driven test game generation, update saved-game round display, and cover new validation and generator tests; bump application version. Update chart for multiple winners
-- **Add charts**: Added score chart views from scoreboard and saved games, improved scoring and podium logic, dealer-bid validation, player chart colors, localized strings, expanded tests, and bumped application version.
-- **Add game summary flow and scoring**: Introduce a post-match game summary page with podium-style results, ranking, achievements, and image sharing. Add a calculator for final standings and bid-based records, improve trump selector layout and input touch handling, extend unit tests, update localized strings, and bump the application version.
+- **Expand test game generation scenarios**: Add scenario-driven test game generation, update saved-game round display, and cover new validation and generator tests. Update chart for multiple winners
+- **Add charts**: Added score chart views from scoreboard and saved games, improved scoring and podium logic, dealer-bid validation, player chart colors, localized strings, expanded tests.
+- **Add game summary flow and scoring**: Introduce a post-match game summary page with podium-style results, ranking, achievements, and image sharing. Add a calculator for final standings and bid-based records, improve trump selector layout and input touch handling, extend unit tests, update localized strings.
 - feat: tablet and landscape layout (roadmap item 10)
 
 ## v3.2.0 (2026-10-09)
 
 [Download APK v3.2.0](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.2.0/wizard-scoreboard-android.apk)
 
-- **Refactor pages into MVVM view models**: Move major page logic into dedicated MVVM view models, including score grid calculations, dialog validation, and bindable list item models. Update pages to bind to the new models, add tests for the view models and score grid logic, increment the app version, and apply the project/package fixes needed for build and dependency resolution.
+- **Refactor pages into MVVM view models**: Move major page logic into dedicated MVVM view models, including score grid calculations, dialog validation, and bindable list item models. Update pages to bind to the new models, add tests for the view models and score grid logic, and apply the project/package fixes needed for build and dependency resolution.
 
 ## v3.1.0 (2026-10-07)
 
@@ -75,19 +85,9 @@ All published versions of Wizard Scoreboard with their changes. Older versions c
 
 [Download APK v3.0.0](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.0.0/wizard-scoreboard-android.apk)
 
-- **Update AdMob config and privacy README**: Add privacy link, per-build AdMob IDs, and bump app version to 10331.
+- **Update AdMob config and privacy README**: Add privacy link, per-build AdMob IDs.
 - Add monetization unit tests
 - Add multilingual privacy policy and Settings link
 - Fix AdMob init, add entry-dialog banners, monetization strings and tests
-- **Add ad and purchase flows to scoreboard app**: Integrate AdMob banners, interstitials, rewarded ads, and remove-ads purchase/restore flows across the main pages and scoreboard flow; add stop-game policies, save-game handling, AdMob initialization, and bump ApplicationVersion to 10327.
-- **Add monetization support and ad-free state**: Wire in AdMob and in-app purchase support for Android/iOS, add ad/purchase services and no-op fallbacks, persist remove_ads as IsAdFree with notifications, and bump app version/build metadata.
-
-## v2.5.5 (2026-10-06)
-
-[Download APK v2.5.5](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v2.5.5/wizard-scoreboard-android.apk)
-
-## v2.5.4 (2026-10-06)
-
-[Download APK v2.5.4](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v2.5.4/wizard-scoreboard-android.apk)
-
-- **Fix Android release notes handling**: Update the Android release workflow to allow GitHub releases without `--verify-tag` and to pass an explicit empty release note when no notes file is available; bump `ApplicationVersion` to `10329`.
+- **Add ad and purchase flows to scoreboard app**: Integrate AdMob banners, interstitials, rewarded ads, and remove-ads purchase/restore flows across the main pages and scoreboard flow; add stop-game policies, save-game handling, AdMob initialization.
+- **Add monetization support and ad-free state**: Wire in AdMob and in-app purchase support for Android/iOS, add ad/purchase services and no-op fallbacks, persist remove_ads as IsAdFree with notifications.
