@@ -4,6 +4,8 @@ This page lists all published Android releases of Wizard Scoreboard.
 
 ## Released Versions
 
+- [v3.4.2](https://github.com/hvkooten/wizard-scoreboard-release/releases/tag/v3.4.2) - [Download APK](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.4.2/wizard-scoreboard-android.apk) (2026-10-11)
+
 - [v3.4.0](https://github.com/hvkooten/wizard-scoreboard-release/releases/tag/v3.4.0) - [Download APK](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.4.0/wizard-scoreboard-android.apk) (2026-10-11)
 
 - [v3.3.2](https://github.com/hvkooten/wizard-scoreboard-release/releases/tag/v3.3.2) - [Download APK](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.3.2/wizard-scoreboard-android.apk) (2026-10-10)

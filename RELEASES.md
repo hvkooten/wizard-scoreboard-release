@@ -4,14 +4,20 @@
 
 All published versions of Wizard Scoreboard with their changes. Older versions can be downloaded below.
 
-## v3.4.0 (2026-10-11)
+## v3.4.2 (2026-10-11)
 
-[Download APK v3.4.0](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.4.0/wizard-scoreboard-android.apk)
+[Download APK v3.4.2](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.4.2/wizard-scoreboard-android.apk)
 
+- **Align round validation with card counts**: Use session card counts for round generation and validation; update tests to the new PlayerInputViewModel constructor and bump the application version.
+- **Add round schedule service and tests**: Centralize cards-per-round logic in a new RoundSchedule service, add short-game coverage for 3–6 players with validation tests, mark the blind-bidding roadmap item as complete, and bump ApplicationVersion to 10378.
 - **Add advanced settings toggle to Settings page**: Introduce a persisted ShowAdvancedSettings preference and split Settings into basic and advanced sections. Move bid-total rule, bold-all-text, export, and import controls behind the new advanced switch, add localized labels, add tests, and bump the app version to 3.4.0 (10376).
 - **Support hidden group options in settings**: Add globally hidden group options with settings for bid-rule and dealer-picks-trump visibility, plus a default dealer-picks-trump value when hidden. Update player selection and game-start behavior to respect hidden options and preserve group values. Extend Groups and Settings UI, add localized strings, cover hidden-option and JSON behaviors with unit tests, bump ApplicationVersion to 10374, and mark roadmap item 17 complete.
 - **Refactor switch rows and settings sections**: Use UiFactory.CreateSwitchRow and CreateSectionHeader across pages, expand beta welcome opt-out caption support, add settings localization strings, and bump ApplicationVersion to 10373.
 - **Add localized beta settings strings**: Add localized beta settings strings, and bump the app version from 10370 to 10372.
+
+## v3.4.0 (2026-10-11)
+
+[Download APK v3.4.0](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.4.0/wizard-scoreboard-android.apk)
 
 ## v3.3.2 (2026-10-10)
 
