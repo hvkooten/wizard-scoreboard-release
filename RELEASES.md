@@ -103,3 +103,226 @@ All published versions of Wizard Scoreboard with their changes. Older versions c
 - Fix AdMob init, add entry-dialog banners, monetization strings and tests
 - **Add ad and purchase flows to scoreboard app**: Integrate AdMob banners, interstitials, rewarded ads, and remove-ads purchase/restore flows across the main pages and scoreboard flow; add stop-game policies, save-game handling, AdMob initialization.
 - **Add monetization support and ad-free state**: Wire in AdMob and in-app purchase support for Android/iOS, add ad/purchase services and no-op fallbacks, persist remove_ads as IsAdFree with notifications.
+
+## v2.5.5 (2026-10-06)
+
+No download available for this version.
+
+## v2.5.4 (2026-10-06)
+
+No download available for this version.
+
+- **Fix Android release notes handling**: Update the Android release workflow to allow GitHub releases without `--verify-tag` and to pass an explicit empty release note when no notes file is available.
+
+## v2.5.2 (2026-10-06)
+
+No download available for this version.
+
+- **release Handle optional release repo updates**: Add optional RELEASE_REPO_PAT handling to android-release workflow so VERSION_OVERVIEW.md can be updated and pushed in a separate release repository. Generalize the version-overview helper to accept a file path and repository name, create the file when missing.
+- **Publish APKs and changelog to separate release repo**: Add a GitHub Actions step to create/update a release in hvkooten/wizard-scoreboard-release and upload APK artifacts and per-version changelog notes when RELEASE_REPO_PAT is provided. Prepare artifacts and extract the matching section from ChangeLog.md/CHANGELOG.md for release notes; upload or update files with gh release commands.
+- **Clarify Scores/Points x10 setting**: Update localized rules pages to explain that the “Scores/Points x10” option can be turned on or off, and that when it is off the tablet shows experience points divided by ten.
+
+## v2.5.1 (2026-10-05)
+
+No download available for this version.
+
+- **Combine same-name highscores; warn on deletes**: Update help pages and delete-group warnings in EN/DE/ES/FR/NL/DA to explain that same-named players across groups share highscore totals, deleting a group removes its scores, and unique names are recommended.
+- **Preserve group selection on navigation**: Re-select the active group before leaving group dialogs so OnAppearing does not reset the selection.
+- **Add SelectGroup strings**: Add the new SelectGroup localized string across English, Danish, German, Spanish, French, and Dutch resources.
+- **Fix group edits and pending game startup**: Track unsaved group changes, preserve the bid-total rule caption and Windows picker behavior, keep generated group names stable after reordering, and add a Windows fallback for starting pending games after navigation; move startup logic in ScoreBoardPage.
+- **Improve picker taps and preserve page state**: Add a shared `OpensPickerOnTap` helper to make labels and preview rows open pickers more reliably across pages. Preserve the selected group when switching in `ScoreBoardPage`, and keep users on Settings after changing language.
+- **Preserve selected group on new game start**: Keep the previously selected group when starting a new game from the groups page by skipping the session-group reset during `StartGameOnAppearing`.
+
+## v2.4.0 (2026-10-05)
+
+No download available for this version.
+
+- **Add quick rules and score scaling support**: Add QuickRulesPage with localized rule summaries and reusable rule files, introduce ScoreTimesTen and formatted score display helpers, update score-related UI, and expand tests.
+- **Add Danish localization support**: Add da-DK resources, rules content, localization coverage, language selection, and supported cultures.
+
+## v2.3.0 (2026-10-05)
+
+No download available for this version.
+
+- **Rename trump setting and tighten no-trump rules**: Replace AllowNoTrump with DealerPicksTrump across models, UI, persistence, and tests; keep legacy JSON compatibility, update no-trump validation/trump selection behavior, and revise localized rules text.
+- **Render suit symbols as text**: Update localized rules pages to render heart and diamond suits with the text-style selector.
+- **Reorder character-card bullets**: Reorder Wizard rules character-card bullet lists so color-based entries precede suit-based entries in DE, EN, ES, FR, and NL, and normalize HTML list formatting.
+- **Refine Wizard rules translations**: Add separate color- and suit-based card order explanations with localized Wizard/Fool rankings in DE/EN/ES/FR/NL.
+- **Support palette-aware rules rendering**: Update RulesPage to use ITrumpPaletteService, cache the active palette mode, reload only when language, theme, or palette changes. Add palette-specific CSS injection and unit tests for ApplySuitStyle.
+- **Clarify rules pages**: Update rule pages in German, English, Spanish, French, and Dutch to clarify tablet setup, player ordering, trump selection, bidding flow, the bid-not-total rule, last-round correction, and pause/end/highscore options.
+- **Force no-trump on final round**: Add forced no-trump handling for the last round when the dealer does not choose trump, validate it in ScoreService, hide other trump options in the UI, and add a unit test.
+- **Unify Android signing**: Add conditional Android signing so Debug and Release can share the same keystore when credentials are set, avoiding signature mismatches and preserving app data.
+- **Recover crash logs in startup bug reports**: Add crash-log recovery on next app start, centralize platform storage in `CrashLogStore`, update Android/iOS persistence, append crash details to bug reports, add localized prompt strings, and cover `CrashLogStore` with tests.
+- **Fix iOS versioning and title layout**: Add iOS build number display, header label handling, title inset adjustments, and crash diagnostics.
+- **Constrain HighscorePage scrolling layout**: Switch HighscorePage from StackLayout to Grid so the CollectionView height is constrained and can scroll properly.
+- **Make text actions responsive**: Switch ScoreBoardPage text actions to a responsive Grid layout and add ApplyTextActionLayout() to manage row/column placement and row collapse.
+- **Hide keyboard on player count change**: Hide the Android soft keyboard and clear focus before rebuilding GroupsPage entries, update player count resource strings to use “After…” wording, and adjust keyboard spacer formatting.
+- **Localize group labels and update GroupsPage**: Add translations for the bid-not-total round-rule label and group name label, update GroupsPage with the group name and a platform-specific round-rule header, and reduce the Android keyboard spacer height adjustment.
+- **Improve Android keyboard scrolling**: Add a hidden keyboard spacer to GroupsPage so Android player name fields remain visible while typing.
+- **Localize highscore headers and improve layout**: Add localized highscore column headers and localization tests, update HighscorePage to use localized labels, add resource entries for supported languages, set Android soft input mode to Resize, and increase button heights for touch usability.
+
+## v2.2.0 (2026-10-01)
+
+No download available for this version.
+
+- **Default Trump palette to FourColors**: Default TrumpPaletteService to FourColors when no stored preference exists or the stored value is invalid; update tests and bump app versions to 2.2.0 (ApplicationVersion 10275).
+- **Default no-trump start from Groups page**: Set `Group.AllowNoTrump` to true by default, update the localized dealer-picks-trump caption, add localization tests, and allow a selected saved group to start directly from Groups when no game is active. Bump ApplicationVersion to 10272.
+- **Load localized rules in WebView**: Replace the Rules page static text with a WebView that loads localized HTML from app assets, add rules pages for en/de/es/fr/nl with responsive styling and English fallback, remove obsolete resource entries, and bump ApplicationVersion to 10268.
+- **Support optional No Trump sessions**: Add group/session setting persistence, UI support, round validation, localized strings, and tests for No Trump; bump ApplicationVersion to 10267.
+- **Pin bidding and actuals actions in footer**: Move bidding and actuals dialog buttons into a dedicated footer below the scrollable form, add shared footer/layout helpers, refine bid total warning logic, preserve round watermark/backdrop behavior, and bump ApplicationVersion to 10266.
+- **Refresh scoreboard action button states**: Update ScoreBoardPage to apply paused/active action-button state before enabling controls, and bump the app build version to 10264.
+- **Rework scoreboard action bar rendering**: Rebuild the scoreboard action bar with a dynamic ContentView layout, centralize button creation, refresh toolbar controls when simplified-button mode changes, sync localized captions, and bump the application version.
+- **Add simplified buttons setting and tests**: Add Simplified buttons setting with persistence/localization, compact secondary actions in ScoreBoardPage, updated beta welcome wording, and tests; bump application version to 10261.
+- **Add beta welcome flow and persistent setting**: Add beta welcome page, settings toggle, localization, and tests; preserve beta welcome state across startup and theme rebuilds; increment application version.
+- **Add localized bug report actions**: Add localized bug-report support with versioned subjects, English technical details, and copy/open-email actions with clipboard fallback. Update resource strings for EN/NL/DE/ES/FR, expand localization tests, and bump ApplicationVersion to 10258.
+- **Add localized bug reporting flow**: Add localized bug reporting, mobile and WinUI entry points, localization tests, and bump the application version.
+- **Harden round validation and persistence**: Reject invalid/incomplete rounds, block new rounds until prior ones are finished, strip unfinished rounds from pause/resume/end/load paths, persist completed snapshots only, cancel abandoned round dialogs, expand validation/persistence tests, update localization, and bump app version to 10255.
+- **Refactor settings and expand persistence tests**: Centralize user settings behind a preference-backed wrapper, inject preferences into core services, update screen wake handling, and add broader regression coverage for persistence, localization, score calculation, and group management.
+- **Support last-round edits and restore history**: Add last-round correction support in ScoreService, RoundEntry snapshot restoration, scoreboard edit flow with visible bids and cancel/back support, page-appearance session restoration, localization updates, broader tests, and bump ApplicationVersion to 10253.
+- **Reuse scoreboard cells on refresh**: Update existing grid cells in place instead of rebuilding the full UI each refresh, rebuild grid structure only when needed, use fixed round row indices, and bump ApplicationVersion to 10250.
+- **Add iOS support and bump app version**: Add net10.0-ios support, iOS app bootstrap files, and Info.plist configuration; update Android app metadata, increment ApplicationVersion to 10249, and set app version to 2.1.0.
+
+## v2.1.0 (2026-10-01)
+
+No download available for this version.
+
+- **Tighten AppShell flyout on phones**: Reduce AppShell flyout width on phones, remove the extra Android toolbar inset after the hamburger icon, and bump ApplicationVersion to 10247.
+- **Refine Android page title layout**: Adjust Android page title spacing to sit closer to the hamburger icon without clipping, reduce the title grid width offset from 88 to 68, and increment ApplicationVersion to 10246.
+- **Update splash screen and bump version**: Bump ApplicationVersion to 10245 and set the MAUI splash screen background color to #10161d while preserving the existing image and base size.
+- **Refine group switching and duplicate checks**: Use a combined group name row with an action-sheet-driven group selector, validate duplicate group names before saving, add localized duplicate-name strings, and bump the application version to 10244.
+- **Persist language and first-run defaults**: Save the selected app language in AppSettings, restore it on startup, apply first-launch bold text defaults, switch localization fallback to en-US, and bump ApplicationVersion.
+- **Add branded splash and first-launch settings**: Introduce a custom startup splash with version, copyright, and localized disclaimer; route first launches to Settings; add shell page selection support; localize strings; improve language labels; update app version and include splash asset.
+- **Restore scoreboard UI after round popup**: Disable game buttons before showing the round popup, refresh the UI in a finally block to ensure recovery after failures or interruptions, and bump ApplicationVersion to 10234.
+- **Disable game buttons during start/pause**: Wrap game start and pause toggling in a shared helper that disables all action buttons, yield so the disabled state is visible, refresh UI even on early exit or exceptions, and bump ApplicationVersion to 10233.
+- **Stabilize pause toggle UI**: Disable Start/Pause/End briefly during TogglePauseAsync(), restore UI state on exceptions with RefreshUI(), and bump ApplicationVersion to 10231.
+- **Refine trump visuals and watermark**: Update CardSuits watermark to show round plus trump symbol, refine trump color palettes and selection styling, and bump application version to 10230.
+- **Add default bid-total round label translations**: Add DefaultBidTotalRuleStartRound translations across EN/DE/ES/FR/NL and bump ApplicationVersion to 10229.
+- **Split group actions and improve navigation**: Add edit-group flow from player selection, route create/edit actions to GroupsPage, auto-select new group when creating, refactor player selection results, add localized group labels, and bump application version.
+- **Add localized Groups label**: Add localized Groups string for English, German, Spanish, French, and Dutch resources, and bump ApplicationVersion to 10226.
+- **Reuse modal for bidding/actuals flow**: Rework `DisplayRoundPopupAsync` to reuse the same modal when switching from bidding to actuals, add bid validation text colors, keep the popup open across the flow, improve cancel/error modal closing, add a guarded Back control for actuals, and bump `ApplicationVersion` to 10225.
+- **Generalize bid rules and restore sessions**: Dynamic round-limit helpers now drive bid-total rules across Settings, Groups, and Scoreboard; refine button styling and dark-mode dialogs; improve actuals refresh and player name rendering; resume active saved sessions paused and persist all active sessions; update app version to 10220.
+- **Add theme persistence and dark mode support**: Persist app theme, add a settings picker, rebuild AppShell on theme changes, centralize theme-aware colors, update UI to use shared dark-mode resources, fix header bolding, add localized strings, and bump the application version.
+- **Move HeaderLabel bolding to Android handler**: Extract Android bold enforcement for HeaderLabel into a dedicated handler, register it conditionally on Android, update related comments, and bump ApplicationVersion to 10206.
+- **Refine AboutPage version display**: Show Android version text with build number and use version-only text on other platforms via a local variable for platform-specific assignment.
+- **Restore bold Shell headers on Android**: Reapply bold styling for HeaderLabel on Android during font/text updates, keep Shell headers bold again, show app version and build on About page, and bump ApplicationVersion to 10204.
+
+## v2.0.1 (2026-06-17)
+
+No download available for this version.
+
+- Fix: Update release-delete workflow to trigger on deleted releases
+- Add tag verification for manual workflow_dispatch
+- Fix: Increase Java heap size and adjust build settings for Android release
+- Use release unpublished event instead of workflow_dispatch
+- Fix: Change release-delete workflow to use workflow_dispatch trigger
+- Add workflow to remove release entry from VERSION_OVERVIEW.md on release deletion
+
+## v2.0.0 (2026-06-17)
+
+No download available for this version.
+
+- fix: update release tag description and default value in Android release workflow
+- ux: add release keystore preparation and update project settings for Android signing
+- ux: update default release tag to v1.2.3 in Android release workflow
+
+## v1.2.3 (2026-06-17)
+
+No download available for this version.
+
+- ux: update fetch depth and add build optimizations in Android release workflow
+
+## v1.2.2 (2026-06-17)
+
+No download available for this version.
+
+- ux: add splash screen delay and update version display in SVG
+
+## v1.2.1 (2026-06-17)
+
+No download available for this version.
+
+- ux: enhance PageTitleHelper and SettingsPage with improved layout and entry focus handling
+
+## v1.2.0 (2026-06-17)
+
+No download available for this version.
+
+- ux: add workflows for welcoming first-time issue authors and labeling new issues
+
+## v1.1.1 (2026-06-17)
+
+No download available for this version.
+
+- ux: enhance release workflow to update version overview and add release entries
+- ux: add delete functionality for saved games with confirmation dialog
+- ux: refactor page titles to use PageTitleHelper and update UI components
+- ux: move Wizard into page title, same font and line
+- ux: navigate to highscores after winner popup
+
+## v1.1.0 (2026-06-16)
+
+No download available for this version.
+
+- ux: add Wizard subtitle to all page content areas
+- ux: auto-refresh highscores on page appear, remove manual refresh button
+- fix: reset per-game points when starting session
+- feat: order highscores by wins, best, played
+- i18n: add missing bids/none localization keys
+- test: expand score service coverage for saved sessions
+- i18n: add round popup title to all languages
+- feat: track games played and merge highscores by name
+- ux: disable round OK until trump is selected
+- ux: make saved games list collapsible accordion
+- fix: use relative route when opening saved game
+- feat: allow starting new game while current is paused
+- fix: calculate saved game scores from rounds
+- ux: prioritize next round before pause action
+- ux: show only active scoreboard actions
+- fix: guard auto-scroll against null session
+- feat: add saved games overview page
+- feat: persist paused game and restore on startup
+- feat: add pause/resume gameplay control
+- feat: award winners and refresh highscores on early game end
+- ux: use friendly prompt when trump is not selected
+- feat: add cancel button to player selection dialog
+- feat: auto-load last used group on app startup
+- feat: display group players when no game is active
+- style: reorder menu tabs to scoreboard, highscores, rules, settings
+- style: remove star symbol from dealer labels
+- feat: add short round header labels
+- style: shorten bid total rule label
+- fix: align bid total rule text across translations
+- style: sort resource strings by key
+- ci: skip maui install on cache hit and restore workloads
+- ci: update version overview for newer manual release tags
+- ci: update dispatch default only when manual tag is newer
+- ci: track latest release tag as workflow_dispatch default
+- ci: stabilize cache keys to reduce unnecessary cache churn
+- ci: support manual android release reruns and overwrite existing release
+- chore: Upgrade actions/checkout and actions/setup-dotnet to v5, enhance caching for NuGet and MAUI workload
+- ci: trigger workflow validation
+- feat: Update CI workflow to restore and save NuGet and MAUI workload cache
+- chore: Upgrade actions/checkout and actions/setup-dotnet to v5, update restore commands for consistency
+- fix: Update README links to use the correct repository owner
+- feat: Add caching for NuGet and MAUI workload in CI and Android release workflows
+- feat: Update CI workflow to improve MAUI workload installation and restore commands
+
+## v1.0.0 (2026-06-15)
+
+No download available for this version.
+
+- feat: Update README with app details, add Android release workflow, and create version overview
+- feat: Add CI workflow configuration and update README with project description
+- test: Refactor ScoreServiceTests to remove GroupService dependency and add new test cases for bid total rule logic
+- feat: Enhance SettingsPage with trump palette preview and align bid total rule with player count
+- feat: Implement bid total rule start round setting and update related logic across multiple components
+- feat: Update game end logic with confirmation dialog and enhance celebration display for winners
+- feat: Enhance ScoreBoardPage layout with header and footer grids, and improve scrolling behavior
+- feat: Add bid total rule start round setting and update logic in ScoreService
+- <details><summary>feat: Implement player selection and bid total rule start round feature</summary><p>- Added functionality to save and restore window size preferences in App.cs. - Introduced player selection logic in ScoreBoardPage.cs, allowing users to select players for a game. - Updated ScoreSession model to include BidTotalRuleStartRound property to manage the starting round for the bid total rule. - Enhanced SettingsPage.cs to allow configuration of the starting round. - Modified IScoreService and ScoreService to support starting a game with a selected list of players. - Added localization strings for new features in multiple languages.</p></details>
+- <details><summary>Add localization support for French and Dutch languages, enhance group management, and implement trump palette service</summary><p>- Updated resource files for French and Dutch with new game-related strings. - Enhanced GroupService to manage selected groups and persist group data. - Added ITrumpPaletteService and TrumpPaletteService to manage trump palette modes and labels. - Adjusted scoring logic, added platform files, app icons, splash screen resources, and .gitignore.</p></details>
+- implement
+- tasks
+- plan
+- Constitution
+- Initial commit from Specify template
