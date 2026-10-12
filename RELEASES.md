@@ -4,6 +4,12 @@
 
 All published versions of Wizard Scoreboard with their changes. Older versions can be downloaded below.
 
+## v3.5.3 (2026-10-12)
+
+[Download APK v3.5.3](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.5.3/wizard-scoreboard-android.apk)
+
+- **Show saved-game variants in header**: Add saved-game variant text to the saved-games header, cover empty and localized variant cases with tests.
+
 ## v3.5.2 (2026-10-12)
 
 [Download APK v3.5.2](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.5.2/wizard-scoreboard-android.apk)
