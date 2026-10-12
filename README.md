@@ -10,8 +10,10 @@ Wizard Scoreboard is a .NET MAUI app for tracking points in the Wizard card game
 - Correct the latest round's results after entry.
 - Show the trump color while entering bids (card suits or 4-color palette).
 - Apply configurable Wizard scoring rules, including a score multiplier.
+- Play game variants: hidden bids, blind bids, special cards, Cloud/Juggler and a short game (10 rounds).
+- View the score progression in a chart.
 - Store group-specific settings (including the "bids may not equal tricks" rule per player count).
-- Save games and resume or review them later.
+- Save games and resume or review them later, including the variants played.
 - Keep track of high scores across games.
 - Read the full Wizard rules or a quick-reference summary.
 - Choose a System, Light, or Dark theme.
