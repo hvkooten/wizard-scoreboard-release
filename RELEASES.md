@@ -4,6 +4,12 @@
 
 All published versions of Wizard Scoreboard with their changes. Older versions can be downloaded below.
 
+## v3.5.2 (2026-10-12)
+
+[Download APK v3.5.2](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.5.2/wizard-scoreboard-android.apk)
+
+- **Preserve short game session flags on reload**: Add regression test and persist BlindBids/ShortGame in session copying.
+
 ## v3.5.1 (2026-10-11)
 
 [Download APK v3.5.1](https://github.com/hvkooten/wizard-scoreboard-release/releases/download/v3.5.1/wizard-scoreboard-android.apk)
